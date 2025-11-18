@@ -9,6 +9,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
       options: ["(A) 4π - 16", "(B) 8π - 16", "(C) 16π - 16", "(D) 8π - 8", "(E) 16π - 8"],
       answer: "B",
       topic: "Geometry",
+      difficulty: "Mid-to-High Difficulty (Approx. #18-22)",
       problemImage: `<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="#d3e3fd" stroke="#3b82f6" stroke-width="1"/><rect x="21.7" y="21.7" width="56.6" height="56.6" fill="#ffffff" stroke="#1e293b" stroke-width="1"/></svg>`
     },
     solution: {
@@ -22,6 +23,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
       options: ["(A) 18", "(B) 20", "(C) 36", "(D) 101", "(E) 114"],
       answer: "C",
       topic: "Number Theory",
+      difficulty: "Medium Difficulty (Approx. #15-20)",
       problemImage: null
     },
     solution: {
@@ -35,6 +37,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 24", "(B) 120", "(C) 360", "(D) 720", "(E) 1296"],
         answer: "C",
         topic: "Combinatorics",
+        difficulty: "Medium Difficulty (Approx. #12-18)",
         problemImage: null
     },
     solution: {
@@ -48,6 +51,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 8", "(B) 9", "(C) 10", "(D) 11", "(E) 12"],
         answer: "E",
         topic: "Algebra",
+        difficulty: "High Difficulty (Approx. #20-24)",
         problemImage: null
     },
     solution: {
@@ -61,6 +65,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 19/66", "(B) 1/3", "(C) 21/66", "(D) 19/72", "(E) 1/4"],
         answer: "A",
         topic: "Probability",
+        difficulty: "Mid-to-High Difficulty (Approx. #17-21)",
         problemImage: null
     },
     solution: {
@@ -74,6 +79,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 23", "(B) 37", "(C) 43", "(D) 49", "(E) 53"],
         answer: "C",
         topic: "Number Theory",
+        difficulty: "High Difficulty (Approx. #21-25)",
         problemImage: null
     },
     solution: {
@@ -87,6 +93,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 12", "(B) 24", "(C) 12.5π", "(D) 24π", "(E) 48"],
         answer: "B",
         topic: "Geometry",
+        difficulty: "High Difficulty (Approx. #21-25)",
         problemImage: `<svg width="200" height="180" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg"><path d="M 10 90 L 10 30 L 90 90 Z" fill="#e0e7ff" stroke="#1e293b" stroke-width="1"/><path d="M 10 60 C 10 43.4 23.4 30 40 30 C 56.6 30 70 43.4 70 60 Z" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/><path d="M 50 90 C 27.9 90 10 72.1 10 50 C 10 27.9 27.9 10 50 10 C 72.1 10 90 27.9 90 50 Z" fill="none" stroke="#60a5fa" stroke-width="1" stroke-dasharray="2,2"/><path d="M 50 90 C 72.1 90 90 72.1 90 50 C 90 27.9 72.1 10 50 10 C 27.9 10 10 27.9 10 50 Z" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" clip-path="url(#cut-off-bottom)"/><defs><clipPath id="cut-off-bottom"><rect x="0" y="0" width="120" height="90" /></clipPath></defs></svg>`
     },
     solution: {
@@ -100,6 +107,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 1/4", "(B) 3/8", "(C) 7/16", "(D) 1/2", "(E) 9/16"],
         answer: "C",
         topic: "Probability",
+        difficulty: "High Difficulty (Approx. #22-25)",
         problemImage: null
     },
     solution: {
@@ -113,6 +121,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 10", "(B) 12", "(C) 20", "(D) 24", "(E) 100"],
         answer: "D",
         topic: "Number Theory",
+        difficulty: "Mid-to-High Difficulty (Approx. #18-22)",
         problemImage: null
     },
     solution: {
@@ -126,6 +135,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 18", "(B) 35", "(C) 52", "(D) 56", "(E) 70"],
         answer: "C",
         topic: "Combinatorics",
+        difficulty: "Mid-to-High Difficulty (Approx. #19-23)",
         problemImage: `<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><path id="grid-path" d="M 10 10 V 90 M 30 10 V 90 M 50 10 V 90 M 70 10 V 90 M 90 10 V 90 M 10 10 H 90 M 10 30 H 90 M 10 50 H 90 M 10 70 H 90 M 10 90 H 90" stroke="#9ca3af" stroke-width="1"/></defs><use href="#grid-path"/><circle cx="10" cy="90" r="3" fill="#3b82f6"/><text x="5" y="98" font-size="8" fill="#3b82f6">A</text><circle cx="90" cy="10" r="3" fill="#3b82f6"/><text x="88" y="7" font-size="8" fill="#3b82f6">B</text><line x1="50" y1="50" x2="50" y2="30" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="2,1"/><text x="45" y="43" fill="#ef4444" font-size="12">X</text></svg>`
     },
     solution: {
@@ -139,6 +149,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 2", "(B) 7/3", "(C) 5/2", "(D) 8/3", "(E) 3"],
         answer: "B",
         topic: "Algebra",
+        difficulty: "Medium Difficulty (Approx. #14-19)",
         problemImage: null
     },
     solution: {
@@ -152,6 +163,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 48π", "(B) 51π", "(C) 54π", "(D) 60π", "(E) 63π"],
         answer: "C",
         topic: "Geometry",
+        difficulty: "Mid-to-High Difficulty (Approx. #17-21)",
         problemImage: `<svg width="150" height="200" viewBox="0 0 60 90" xmlns="http://www.w3.org/2000/svg"><path d="M 5 40 L 55 40 L 55 85 L 5 85 Z" fill="#dbeafe" stroke="#1e293b" stroke-width="1"/><ellipse cx="30" cy="85" rx="25" ry="5" fill="#dbeafe" stroke="#1e293b" stroke-width="1"/><path d="M 5 40 L 30 0 L 55 40" fill="#a5b4fc" stroke="#1e293b" stroke-width="1"/><ellipse cx="30" cy="40" rx="25" ry="5" fill="#dbeafe" stroke="#1e293b" stroke-width="1"/></svg>`
     },
     solution: {
@@ -165,6 +177,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 1", "(B) 3", "(C) 7", "(D) 9", "(E) 0"],
         answer: "A",
         topic: "Number Theory",
+        difficulty: "Medium Difficulty (Approx. #16-20)",
         problemImage: null
     },
     solution: {
@@ -178,6 +191,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 1/2", "(B) 5/8", "(C) 5/11", "(D) 6/11", "(E) 3/4"],
         answer: "C",
         topic: "Probability",
+        difficulty: "High Difficulty (Approx. #23-25)",
         problemImage: null
     },
     solution: {
@@ -191,6 +205,7 @@ export const INITIAL_PROBLEMS: VerifiedProblem[] = [
         options: ["(A) 116", "(B) 117", "(C) 133", "(D) 150", "(E) 200"],
         answer: "A",
         topic: "Combinatorics",
+        difficulty: "Mid-to-High Difficulty (Approx. #18-22)",
         problemImage: null
     },
     solution: {

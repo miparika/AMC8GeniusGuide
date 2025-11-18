@@ -67,8 +67,11 @@ export const ProblemSolver: React.FC<ProblemSolverProps> = ({ problem, solution,
     <div className="space-y-6">
       <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg">
         <div className="flex justify-between items-start">
-            <h3 className="text-xl font-semibold mb-4 leading-relaxed">{problem.problem}</h3>
-            <span className="ml-4 flex-shrink-0 text-xs font-semibold uppercase tracking-wider bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 px-2 py-1 rounded-full">{problem.topic}</span>
+            <h3 className="text-xl font-semibold mb-4 leading-relaxed mr-4">{problem.problem}</h3>
+            <div className="ml-4 flex-shrink-0 text-right">
+                <span className="text-xs font-semibold uppercase tracking-wider bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 px-2 py-1 rounded-full">{problem.topic}</span>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-2">{problem.difficulty}</p>
+            </div>
         </div>
 
         {problem.problemImage && (

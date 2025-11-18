@@ -18,11 +18,12 @@ const problemSchema = {
         },
         answer: { type: Type.STRING, description: "The letter of the correct option, e.g., 'C'." },
         topic: { type: Type.STRING, description: "The mathematical topic of the problem." },
+        difficulty: { type: Type.STRING, description: "An assessment of the problem's difficulty, e.g., 'High Difficulty (Approx. #21-25)'." },
         problemImage: { type: Type.STRING, description: "An optional self-contained SVG string for geometry problems. Null if not applicable." },
         solution: { type: Type.STRING, description: "A detailed, step-by-step solution in Markdown format that proves the answer." },
         concepts: { type: Type.STRING, description: "The core mathematical concepts involved, in Markdown format." }
     },
-    required: ['problem', 'options', 'answer', 'topic', 'solution', 'concepts'],
+    required: ['problem', 'options', 'answer', 'topic', 'difficulty', 'solution', 'concepts'],
 };
 
 export const getNewProblem = async (): Promise<VerifiedProblem> => {
@@ -38,11 +39,12 @@ export const getNewProblem = async (): Promise<VerifiedProblem> => {
             
             Your internal process MUST be as follows:
             1. Create a candidate problem, its 5 multiple-choice options, and identify the correct answer.
-            2. If the problem is 'Geometry', you MUST generate a simple, clear, black-and-white, self-contained SVG image string. For other topics, this should be null.
-            3. Write a detailed, step-by-step solution for the problem.
-            4. CRITICALLY REVIEW your own solution. Does it logically and correctly lead to the answer you identified? Is the math sound?
-            5. If your self-review fails, discard the problem and start again from step 1 with a new problem.
-            6. Only when you have a problem that has passed your own internal verification, output the final, verified problem, solution, and key concepts in the required JSON format.
+            2. Assess the problem's difficulty and create a label for it (e.g., "Medium Difficulty (Approx. #15-20)", "High Difficulty (Approx. #21-25)").
+            3. If the problem is 'Geometry', you MUST generate a simple, clear, black-and-white, self-contained SVG image string. For other topics, this should be null.
+            4. Write a detailed, step-by-step solution for the problem.
+            5. CRITICALLY REVIEW your own solution. Does it logically and correctly lead to the answer you identified? Is the math sound?
+            6. If your self-review fails, discard the problem and start again from step 1 with a new problem.
+            7. Only when you have a problem that has passed your own internal verification, output the final, verified problem, difficulty, solution, and key concepts in the required JSON format.
             
             The final output JSON must contain 5 options, each starting with '(A)', '(B)', '(C)', '(D)', '(E)'. The answer should be just the letter, like 'C'.`;
             

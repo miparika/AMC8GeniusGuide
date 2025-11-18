@@ -3,6 +3,7 @@ export interface Problem {
   options: string[];
   answer: string;
   topic: string;
+  difficulty: string;
   problemImage?: string; // Optional field for SVG image string
 }
 
